@@ -1,5 +1,5 @@
 <?php
-  $bd ='persona';
+  $bd ='escuela';
   $servidor='localhost';
   $usuario='root';
   $contrasena='zanahoria1teran';
