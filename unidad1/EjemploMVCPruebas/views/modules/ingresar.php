@@ -1,6 +1,6 @@
 <h1>INGRESAR</h1>
 
-	<form method="post">
+	<form method="post" >
 		
 		<input type="text" placeholder="Usuario" name="usuarioIngreso" required>
 
