@@ -2,7 +2,7 @@
   <div class="table-title">
     <div class="row">
       <div class="col-sm-8">
-        <h2>Editar Habitación</h2>
+        <h2>Editar Maestro</h2>
       </div>
       <div class="col-sm-4">
         <a href="index.php?modulo=habitaciones" class="btn btn-info">Regresar</a>
@@ -13,7 +13,7 @@
     <?php echo $message;?>
   </div>
   <div class="row">
-    <form method="post" action="index.php?modulo=habitaciones&accion=editar&id=<?=$fila['id']?>" enctype="multipart/form-data">
+    <form method="post" action="index.php?modulo=maestros&accion=editar&id=<?=$fila['id']?>" enctype="multipart/form-data">
       <div class="col-md-12">
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" id="nombre" class="form-control" maxlength="255" placeholder="Nombre" required value="<?=$fila['nombre']?>">

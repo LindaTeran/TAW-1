@@ -7,17 +7,17 @@
         </ul>
 
         <ul class="menu js__accordion">
-          <li>
-            <a href="index.php?modulo=habitaciones"><i class="menu-icon fa fa-bed"></i><span>Habitaciones</span></a>
-          </li>
-          <li>
-            <a href="index.php?modulo=clientes"><i class="menu-icon fa fa-user"></i><span>Clientes</span></a>
-          </li>
-          <li>
-            <a href="index.php?modulo=reservaciones"><i class="menu-icon fa fa-calendar"></i><span>Reservaciones</span></a>
+         <li>
+            <a href="index.php?modulo=maestros"><i class="menu-icon fa fa-user"></i><span>Maestros</span></a>
           </li>
          <li>
-            <a href="index.php?modulo=maestros"><i class="menu-icon fa fa-bed"></i><span>Maestros</span></a>
+            <a href="index.php?modulo=alumnos"><i class="menu-icon fa fa-graduation-cap"></i><span>Alumnos</span></a>
+          </li>
+         <li>
+            <a href="index.php?modulo=materias"><i class="menu-icon fa fa-book"></i><span>Materias</span></a>
+          </li>
+         <li>
+            <a href="index.php?modulo=grupos"><i class="menu-icon fa fa-group"></i><span>Grupos</span></a>
           </li>
           
           

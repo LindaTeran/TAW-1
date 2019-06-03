@@ -17,8 +17,8 @@
   <div class="row">
     <form method="post" action="index.php?modulo=maestros&accion=agregar">
       <div class="col-md-12">
-        <label for="nombre">Clave de trabajo:</label>
-        <input type="text" name="nombre" id="nombre" class="form-control" maxlength="255" placeholder="Nombre" required>
+        <label for="clave">Clave de trabajo:</label>
+        <input type="text" name="clave_trabajo" id="clave_trabajo" class="form-control" maxlength="255" placeholder="Clave de trabajo" required>
       </div>
       <div class="col-md-12 pull-right">
       <br/>
@@ -33,8 +33,8 @@
       </div>
       
       <div class="col-md-12">
-        <label for="nombre">Apellido Paterno:</label>
-        <input type="text" name="nombre" id="nombre" class="form-control" maxlength="255" placeholder="Nombre" required>
+        <label for="ape_pat">Apellido Paterno:</label>
+        <input type="text" name="ape_pat" id="ape_pat" class="form-control" maxlength="255" placeholder="Apellido Paterno" required>
       </div>
       
       <div class="col-md-12 pull-right">
@@ -42,8 +42,8 @@
       </div>
       
       <div class="col-md-12">
-        <label for="nombre">Apellido Materno:</label>
-        <input type="text" name="nombre" id="nombre" class="form-control" maxlength="255" placeholder="Nombre" required>
+        <label for="ape_mat">Apellido Materno:</label>
+        <input type="text" name="ape_mat" id="ape_mat" class="form-control" maxlength="255" placeholder="Apellido Materno" required>
       </div>
       
       <div class="col-md-12 pull-right">
@@ -51,8 +51,8 @@
       </div>
       
       <div class="col-md-12">
-        <label for="nombre">Telefono:</label>
-        <input type="text" name="nombre" id="nombre" class="form-control" maxlength="255" placeholder="Nombre" required>
+        <label for="telefono">Telefono:</label>
+        <input type="text" name="telefono" id="telefono" class="form-control" maxlength="255" placeholder="Teléfono" required>
       </div>
       
       <div class="col-md-12 pull-right">

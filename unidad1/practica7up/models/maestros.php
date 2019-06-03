@@ -61,7 +61,7 @@ class maestros {
   }
   
   public function listar(){
-    $sql = "SELECT FROM `$this->tabla`";
+    $sql = "SELECT * FROM `$this->tabla`";
     //$sql = "SELECT v.id as id, v.nombre as nombre, p.nombre as tipo, v.precio as precio  FROM $this->tabla as v INNER JOIN tipohabitacion as p on v.tipo = p.id";
     $res = mysqli_query($this->con, $sql);
     return $res;
