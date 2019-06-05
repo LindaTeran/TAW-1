@@ -1,7 +1,8 @@
 <?php 
-require_once "./models/habitaciones.php";
-require_once "./models/clientes.php";
 require_once "./models/maestros.php";
+require_once "./models/alumnos.php";
+require_once "./models/materias.php";
+require_once "./models/grupos.php";
 
   class mvcController{
     //Llamar a la plantilla
@@ -39,22 +40,35 @@ require_once "./models/maestros.php";
                $res = $modelo->editar($_POST["id"], $_POST["clave_trabajo"], $_POST["nombre"], $_POST["ape_pat"], $_POST["ape_mat"], $_POST["telefono"]);
               break;
           }
-          
         }
         
-         if($modulo == "clientes"){
-          $modelo = new clientes();
+        if($modulo == "alumnos"){
+          $modelo = new alumnos();
           
           switch($accion){
             case "agregar": 
-               $res = $modelo->agregar($_POST["nombre"], $_POST["ape_pat"], $_POST["ape_mat"], $_POST["telefono"], $_POST["genero"], $_POST["tipo"]);
+               $res = $modelo->agregar($_POST["matricula"], $_POST["nombre"], $_POST["ape_pat"], $_POST["ape_mat"]);
                break;
             case "editar": 
-               $res = $modelo->editar($_POST["id"], $_POST["nombre"], $_POST["ape_pat"], $_POST["ape_mat"], $_POST["telefono"], $_POST["genero"], $_POST["tipo"]);
+               $res = $modelo->editar($_POST["id"], $_POST["matricula"], $_POST["nombre"], $_POST["ape_pat"], $_POST["ape_mat"]);
                break;
-          }
-          
+          }          
         }
+        
+          if($modulo == "grupos"){
+          $modelo = new grupos();
+          
+          switch($accion){
+            case "agregar": 
+               $res = $modelo->agregar($_POST["nombre"]);
+               break;
+            case "editar": 
+               $res = $modelo->editar($_POST["id"], $_POST["nombre"]);
+               break;
+          }          
+        }
+        
+        
         if($res){
           $message= "Datos guardados con éxito ";
           $class="alert alert-success";
@@ -67,9 +81,10 @@ require_once "./models/maestros.php";
      // si hay que mostrar alguna informacion
      if($modulo != "index" && $accion != "agregar"){
         switch($modulo){
-            case "habitaciones":$modelo = new habitaciones(); break;
-            case "clientes":$modelo = new clientes(); break;
+            case "grupos":$modelo = new grupos(); break;
             case "maestros":$modelo = new maestros(); break;
+            case "alumnos":$modelo = new alumnos(); break;
+            case "materias":$modelo = new materias(); break;
         }
         
         // si es una lista de datos
@@ -80,24 +95,18 @@ require_once "./models/maestros.php";
         
         // si es un solo registro
         $id = $_GET["id"];
-        if(isset($id) &&  ($accion == "eliminar") ){
+        if(isset($id) &&  ($accion == "eliminar")  || ($accion == "editar") ){
           $fila = $modelo->buscar($id);
-          if($fila){
+          if($fila && $accion == "eliminar"){
             $res = $modelo->eliminar($id);
+          }else{
+            $fila = $modelo->buscar($id);
           }
         }
         
       }
       
-      if($modulo=="habitaciones"){
-        $modelo = new habitaciones();
-      }
-      if($modulo=="maestros"){
-        $modelo = new maestros();
-      }
-      if($modulo=="clientes"){
-        $modelo = new clientes();
-      }
+     
       $respuesta = enlacesPaginas::enlacesPaginasModel($modulo, $accion);
       include $respuesta;
 

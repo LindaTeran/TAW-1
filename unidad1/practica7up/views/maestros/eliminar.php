@@ -1,9 +1,7 @@
-	<form action="index.php?modulo=habitaciones&accion=eliminar">
+	<form action="index.php?modulo=maestros&accion=eliminar">
 		<h3>Eliminar Habitación</h3>
 		<hr>
-    
-    <input type="hidden" name="id" id="id" value="">
     <button type="submit">Confirmar</button>
-    <?php header("Location: index.php?modulo=habitaciones");?>
+    <?php header("Location: index.php?modulo=maestros");?>
 
 	</form>

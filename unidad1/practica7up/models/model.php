@@ -7,7 +7,7 @@ class enlacesPaginas{
     
     $vista = "views/modulos/inicioSesion.php";
     
-    if( $modulo == "habitaciones" || $modulo == "clientes" || $modulo == "maestros"){   
+    if( $modulo == "materias" || $modulo == "grupos" || $modulo == "maestros" || $modulo == "alumnos"){   
       $vista = "views/".$modulo."/".$accion.".php";
     }
     

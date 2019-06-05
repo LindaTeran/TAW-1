@@ -1,10 +1,10 @@
 <?php
 require_once "database.php";
   //clase habitaciones controla el crud de las habitaciones
-class maestros {
+class materias {
   //variable con para realizar conexion posteriormente
   private $con;
-  private $tabla = "maestros"; //variable tabia inicializada
+  private $tabla = "materia"; //variable tabia inicializada
 
   //funcion construct, hace llamado a la base de datos y realiza la conexion a la bd
   function __construct(){
@@ -16,8 +16,8 @@ class maestros {
   //parametros: tipo referente al tipo de habitación 
   // nombre: referente al nombre de la habitación y precio: referente al precio de la habitación
   
-  public function agregar($clave_trabajo, $nombre, $ape_pat, $ape_mat, $telefono){
-    $sql = "INSERT INTO `$this->tabla` (clave_trabajo, nombre, ape_pat, ape_mat, telefono) VALUES ('$clave_trabajo','$nombre', '$ape_pat', '$ape_mat', '$telefono')";
+  public function agregar($id_maestro, $id_grupo, $nombre, $codigo){
+    $sql = "INSERT INTO `$this->tabla` (id_maestro, id_grupo, nombre, codigo) VALUES ('$id_maestro', '$id_grupo', '$nombre', '$codigo')";
     $res = mysqli_query($this->con, $sql);
     if($res){
       return true;
@@ -30,9 +30,9 @@ class maestros {
   //parametros: tipo: referente al tipo de habitación, id: referente al id de la habitación
   // nombre: referente al nombre de la habitación y precio: referente al precio de la habitación
   
-  public function editar($id, $clave_trabajo, $nombre, $ape_pat, $ape_mat, $telefono){
+  public function editar($id, $id_maestro, $id_grupo, $nombre, $codigo){
 
-    $sql = "UPDATE `$this->tabla` SET nombre='$nombre', ape_pat='$ape_pat', ape_mat='$ape_mat', telefono='$telefono' WHERE id=$id";
+    $sql = "UPDATE `$this->tabla` SET id_maestro='$id_maestro', id_grupo='$id_grupo', nombre='$nombre', codigo='$codigo' WHERE id=$id";
     $res = mysqli_query($this->con, $sql) or die("Error");
     if($res){
       return true;
@@ -62,6 +62,7 @@ class maestros {
   
   public function listar(){
     $sql = "SELECT * FROM `$this->tabla`";
+    $sql = "SELECT m.nombre as nombre, m.ape_pat as ape_pat, g.nombre, mat.nombre as nombre, mat.codigo as codigo FROM $this->tabla as mat INNER JOIN maestros m ON mat.id_maestro = m.id";
     //$sql = "SELECT v.id as id, v.nombre as nombre, p.nombre as tipo, v.precio as precio  FROM $this->tabla as v INNER JOIN tipohabitacion as p on v.tipo = p.id";
     $res = mysqli_query($this->con, $sql);
     return $res;

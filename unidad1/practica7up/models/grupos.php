@@ -1,10 +1,10 @@
 <?php
 require_once "database.php";
   //clase habitaciones controla el crud de las habitaciones
-class maestros {
+class grupos {
   //variable con para realizar conexion posteriormente
   private $con;
-  private $tabla = "maestros"; //variable tabia inicializada
+  private $tabla = "grupo"; //variable tabia inicializada
 
   //funcion construct, hace llamado a la base de datos y realiza la conexion a la bd
   function __construct(){
@@ -12,12 +12,12 @@ class maestros {
     $this->con = $db->getCon();
   }
   
-  //funcion agregar, inserta un nuevo registro en la base de datos.
+  //funcion agregar, inserta un nuevo registro en la base de datos.dfdddddddddddddd
   //parametros: tipo referente al tipo de habitación 
   // nombre: referente al nombre de la habitación y precio: referente al precio de la habitación
   
-  public function agregar($clave_trabajo, $nombre, $ape_pat, $ape_mat, $telefono){
-    $sql = "INSERT INTO `$this->tabla` (clave_trabajo, nombre, ape_pat, ape_mat, telefono) VALUES ('$clave_trabajo','$nombre', '$ape_pat', '$ape_mat', '$telefono')";
+  public function agregar($nombre){
+    $sql = "INSERT INTO `$this->tabla` (nombre) VALUES ('$nombre')";
     $res = mysqli_query($this->con, $sql);
     if($res){
       return true;
@@ -30,9 +30,9 @@ class maestros {
   //parametros: tipo: referente al tipo de habitación, id: referente al id de la habitación
   // nombre: referente al nombre de la habitación y precio: referente al precio de la habitación
   
-  public function editar($id, $clave_trabajo, $nombre, $ape_pat, $ape_mat, $telefono){
+  public function editar($id, $nombre){
 
-    $sql = "UPDATE `$this->tabla` SET nombre='$nombre', ape_pat='$ape_pat', ape_mat='$ape_mat', telefono='$telefono' WHERE id=$id";
+    $sql = "UPDATE `$this->tabla` SET  nombre='$nombre' WHERE id=$id";
     $res = mysqli_query($this->con, $sql) or die("Error");
     if($res){
       return true;

@@ -7,39 +7,39 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Home - Ninja Admin Template</title>
+	<title>Escuela fea</title>
 
 	<!-- Main Styles -->
-	<link rel="stylesheet" href="assets/styles/style.min.css">
+	<link rel="stylesheet" href="views/assets/styles/style.min.css">
 
 	<!-- mCustomScrollbar -->
-	<link rel="stylesheet" href="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="views/assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
 
 	<!-- Waves Effect -->
-	<link rel="stylesheet" href="assets/plugin/waves/waves.min.css">
+	<link rel="stylesheet" href="views/assets/plugin/waves/waves.min.css">
 
 	<!-- Sweet Alert -->
-	<link rel="stylesheet" href="assets/plugin/sweet-alert/sweetalert.css">
+	<link rel="stylesheet" href="views/assets/plugin/sweet-alert/sweetalert.css">
 	
 	<!-- Percent Circle -->
-	<link rel="stylesheet" href="assets/plugin/percircle/css/percircle.css">
+	<link rel="stylesheet" href="views/assets/plugin/percircle/css/percircle.css">
 
 	<!-- Chartist Chart -->
-	<link rel="stylesheet" href="assets/plugin/chart/chartist/chartist.min.css">
-	<link rel="stylesheet" href="assets/plugin/dropify/css/dropify.min.css">
+	<link rel="stylesheet" href="views/assets/plugin/chart/chartist/chartist.min.css">
+	<link rel="stylesheet" href="views/assets/plugin/dropify/css/dropify.min.css">
 
   <!-- Data Tables -->
-<link rel="stylesheet" href="assets/plugin/datatables/media/css/dataTables.bootstrap.min.css">
-<link rel="stylesheet" href="assets/plugin/datatables/extensions/Responsive/css/responsive.bootstrap.min.css">
+<link rel="stylesheet" href="views/assets/plugin/datatables/media/css/dataTables.bootstrap.min.css">
+<link rel="stylesheet" href="views/assets/plugin/datatables/extensions/Responsive/css/responsive.bootstrap.min.css">
 <!-- Fontello Icon -->
-	<link rel="stylesheet" href="assets/fonts/fontello/fontello.css">
+	<link rel="stylesheet" href="views/assets/fonts/fontello/fontello.css">
 
 	<!-- FullCalendar -->
-	<link rel="stylesheet" href="assets/plugin/fullcalendar/fullcalendar.min.css">
-	<link rel="stylesheet" href="assets/plugin/fullcalendar/fullcalendar.print.css" media='print'>
+	<link rel="stylesheet" href="views/assets/plugin/fullcalendar/fullcalendar.min.css">
+	<link rel="stylesheet" href="views/assets/plugin/fullcalendar/fullcalendar.print.css" media='print'>
 
 	<!-- Color Picker -->
-	<link rel="stylesheet" href="assets/color-switcher/color-switcher.min.css">
+	<link rel="stylesheet" href="views/assets/color-switcher/color-switcher.min.css">
 </head>
 
 <body>
@@ -115,49 +115,49 @@
 </div><!--/#wrapper -->
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
-		<script src="assets/script/html5shiv.min.js"></script>
-		<script src="assets/script/respond.min.js"></script>
+		<script src="views/assets/script/html5shiv.min.js"></script>
+		<script src="views/assets/script/respond.min.js"></script>
 	<![endif]-->
 	<!-- 
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="assets/scripts/jquery.min.js"></script>
-	<script src="assets/scripts/modernizr.min.js"></script>
-	<script src="assets/plugin/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="assets/plugin/nprogress/nprogress.js"></script>
-	<script src="assets/plugin/sweet-alert/sweetalert.min.js"></script>
-	<script src="assets/plugin/waves/waves.min.js"></script>
+	<script src="views/assets/scripts/jquery.min.js"></script>
+	<script src="views/assets/scripts/modernizr.min.js"></script>
+	<script src="views/assets/plugin/bootstrap/js/bootstrap.min.js"></script>
+	<script src="views/assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="views/assets/plugin/nprogress/nprogress.js"></script>
+	<script src="views/assets/plugin/sweet-alert/sweetalert.min.js"></script>
+	<script src="views/assets/plugin/waves/waves.min.js"></script>
 	<!-- Full Screen Plugin -->
-	<script src="assets/plugin/fullscreen/jquery.fullscreen-min.js"></script>
+	<script src="views/assets/plugin/fullscreen/jquery.fullscreen-min.js"></script>
 
 	<!-- Percent Circle -->
-	<script src="assets/plugin/percircle/js/percircle.js"></script>
+	<script src="views/assets/plugin/percircle/js/percircle.js"></script>
 
 	<!-- Google Chart -->
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 	<!-- Chartist Chart -->
-	<script src="assets/plugin/chart/chartist/chartist.min.js"></script>
-	<script src="assets/scripts/chart.chartist.init.min.js"></script>
+	<script src="views/assets/plugin/chart/chartist/chartist.min.js"></script>
+	<script src="views/assets/scripts/chart.chartist.init.min.js"></script>
 
 	<!-- FullCalendar -->
-	<script src="assets/plugin/moment/moment.js"></script>
-	<script src="assets/plugin/fullcalendar/fullcalendar.min.js"></script>
-	<script src="assets/scripts/fullcalendar.init.js"></script>
+	<script src="views/assets/plugin/moment/moment.js"></script>
+	<script src="views/assets/plugin/fullcalendar/fullcalendar.min.js"></script>
+	<script src="views/assets/scripts/fullcalendar.init.js"></script>
 
 <!-- Data Tables -->
-	<script src="assets/plugin/datatables/media/js/jquery.dataTables.min.js"></script>
-	<script src="assets/plugin/datatables/media/js/dataTables.bootstrap.min.js"></script>
-	<script src="assets/plugin/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
-	<script src="assets/plugin/datatables/extensions/Responsive/js/responsive.bootstrap.min.js"></script>
-	<script src="assets/scripts/datatables.demo.min.js"></script>
+	<script src="views/assets/plugin/datatables/media/js/jquery.dataTables.min.js"></script>
+	<script src="views/assets/plugin/datatables/media/js/dataTables.bootstrap.min.js"></script>
+	<script src="views/assets/plugin/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+	<script src="views/assets/plugin/datatables/extensions/Responsive/js/responsive.bootstrap.min.js"></script>
+	<script src="views/assets/scripts/datatables.demo.min.js"></script>
   
 	<!-- Dropify -->
-	<script src="assets/plugin/dropify/js/dropify.min.js"></script>
-	<script src="assets/scripts/fileUpload.demo.min.js"></script>
+	<script src="views/assets/plugin/dropify/js/dropify.min.js"></script>
+	<script src="views/assets/scripts/fileUpload.demo.min.js"></script>
   
-	<script src="assets/scripts/main.min.js"></script>
-	<script src="assets/color-switcher/color-switcher.min.js"></script>
+	<script src="views/assets/scripts/main.min.js"></script>
+	<script src="views/assets/color-switcher/color-switcher.min.js"></script>
 </body>
 </html>
